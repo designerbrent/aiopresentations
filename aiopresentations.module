@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the All-in-One Presentations feature.
+ */
+
+include_once 'aiopresentations.features.inc';
