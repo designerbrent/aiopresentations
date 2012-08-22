@@ -5,3 +5,50 @@
  */
 
 include_once 'aiopresentations.features.inc';
+
+
+
+/**
+ * Implements hook_theme_registry_alter().
+ */
+function aiopresentations_theme_registry_alter(&$theme_registry) {
+  // Move the theme path so the theme takes precidence over this module theme.
+
+  global $theme;
+  
+  $mod_path = drupal_get_path('module', 'aiopresentations');
+  $theme_registry_copy = $theme_registry;       // munge on a copy
+  _theme_process_registry($theme_registry_copy, 'phptemplate', 'theme_engine', $theme, $mod_path);
+  $theme_registry += array_diff_key($theme_registry_copy, $theme_registry);
+  $hooks = array('views_view', 'views_view_list');
+  foreach ($hooks as $h) {
+    _aiopresentations_insert_after_first_element($theme_registry[$h]['theme paths'], $mod_path);
+  }
+  
+}
+
+
+/**
+ * Helper function for re-ordering arrays (needed by theme_registry_alter)
+*/
+function _aiopresentations_insert_after_first_element(&$a, $element) {
+  if(is_array($a)) {
+    $first_element = array_shift($a);
+    array_unshift($a, $first_element, $element);
+  }
+}
+
+
+function aiopresentations_preprocess_views_view(&$vars){
+  switch ($vars['name']) {
+    case 'presentations_event':
+    case 'presentations_speaker':
+      drupal_add_library('system', 'ui.tabs');
+      drupal_add_js('jQuery(document).ready(function(){jQuery("#view_footer_tabs").tabs();});', 'inline');
+        
+
+      break;
+  }
+  
+  
+}
