@@ -1,0 +1,13 @@
+The All-In-One Presentations is a an all inclusive presentation display and archive system. It can easily be downloaded and installed to give you a complete calendar solution for your Drupal website.
+
+## Installation: 
+
+1: Download AIOPresentations
+2: Download dependancies:
+drush dl ctools date features file_entity hierarchical_select hs_taxonomy media media_internet node_reference options strongarm taxonomy views
+3: Enable the All-In-One Presentation Feature.
+
+
+### Credit:
+Currently being developed by [Brent Hardinge](http://brenthardinge.net)  ([Twitter](http://twitter.com/designerbrent)) and [James Jeffery](https://twitter.com/snowball43)
+with sponsorship from [PositiveChoices.com](http://www.positivechoices.com).
