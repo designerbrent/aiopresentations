@@ -91,13 +91,6 @@ function aiopresentations_user_default_permissions() {
     'module' => 'node',
   );
 
-  // Exported permission: delete terms in 5.
-  $permissions['delete terms in 5'] = array(
-    'name' => 'delete terms in 5',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: edit any presentation content.
   $permissions['edit any presentation content'] = array(
     'name' => 'edit any presentation content',
@@ -147,13 +140,6 @@ function aiopresentations_user_default_permissions() {
     'name' => 'edit own presentation_speaker content',
     'roles' => array(),
     'module' => 'node',
-  );
-
-  // Exported permission: edit terms in 5.
-  $permissions['edit terms in 5'] = array(
-    'name' => 'edit terms in 5',
-    'roles' => array(),
-    'module' => 'taxonomy',
   );
 
   // Exported permission: import media.

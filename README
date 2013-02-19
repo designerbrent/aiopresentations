@@ -4,7 +4,7 @@ The All-In-One Presentations is a an all inclusive presentation display and arch
 
 1: Download AIOPresentations
 2: Download dependancies:
-drush dl ctools date features file_entity hierarchical_select media media_internet node_reference options strongarm taxonomy views
+drush dl ctools date features file_entity hierarchical_select media references strongarm views
 3: Enable the All-In-One Presentation Feature.
 
 

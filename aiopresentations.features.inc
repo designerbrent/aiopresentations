@@ -39,7 +39,7 @@ function aiopresentations_node_info() {
       'help' => '',
     ),
     'presentation_event' => array(
-      'name' => t('Event'),
+      'name' => t('Presentation Event'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
