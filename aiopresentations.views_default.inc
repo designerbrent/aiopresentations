@@ -100,20 +100,20 @@ function aiopresentations_views_default_views() {
   $handler->display->display_options['sorts']['field_date_value']['id'] = 'field_date_value';
   $handler->display->display_options['sorts']['field_date_value']['table'] = 'field_data_field_date';
   $handler->display->display_options['sorts']['field_date_value']['field'] = 'field_date_value';
-  /* Contextual filter: Content: Event (field_event) */
-  $handler->display->display_options['arguments']['field_event_nid']['id'] = 'field_event_nid';
-  $handler->display->display_options['arguments']['field_event_nid']['table'] = 'field_data_field_event';
-  $handler->display->display_options['arguments']['field_event_nid']['field'] = 'field_event_nid';
-  $handler->display->display_options['arguments']['field_event_nid']['default_argument_type'] = 'fixed';
-  $handler->display->display_options['arguments']['field_event_nid']['summary']['number_of_records'] = '0';
-  $handler->display->display_options['arguments']['field_event_nid']['summary']['format'] = 'default_summary';
-  $handler->display->display_options['arguments']['field_event_nid']['summary_options']['items_per_page'] = '25';
-  $handler->display->display_options['arguments']['field_event_nid']['specify_validation'] = TRUE;
-  $handler->display->display_options['arguments']['field_event_nid']['validate']['type'] = 'node';
-  $handler->display->display_options['arguments']['field_event_nid']['validate_options']['types'] = array(
-    'speaker' => 'speaker',
+  /* Contextual filter: Content: Speaker (field_speaker) */
+  $handler->display->display_options['arguments']['field_speaker_nid']['id'] = 'field_speaker_nid';
+  $handler->display->display_options['arguments']['field_speaker_nid']['table'] = 'field_data_field_speaker';
+  $handler->display->display_options['arguments']['field_speaker_nid']['field'] = 'field_speaker_nid';
+  $handler->display->display_options['arguments']['field_speaker_nid']['default_argument_type'] = 'fixed';
+  $handler->display->display_options['arguments']['field_speaker_nid']['summary']['number_of_records'] = '0';
+  $handler->display->display_options['arguments']['field_speaker_nid']['summary']['format'] = 'default_summary';
+  $handler->display->display_options['arguments']['field_speaker_nid']['summary_options']['items_per_page'] = '25';
+  $handler->display->display_options['arguments']['field_speaker_nid']['specify_validation'] = TRUE;
+  $handler->display->display_options['arguments']['field_speaker_nid']['validate']['type'] = 'node';
+  $handler->display->display_options['arguments']['field_speaker_nid']['validate_options']['types'] = array(
+    'presentation_speaker' => 'presentation_speaker',
   );
-  $handler->display->display_options['arguments']['field_event_nid']['validate_options']['access'] = TRUE;
+  $handler->display->display_options['arguments']['field_speaker_nid']['validate']['fail'] = 'ignore';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -767,6 +767,7 @@ function aiopresentations_views_default_views() {
   $handler->display->display_options['footer']['view']['field'] = 'view';
   $handler->display->display_options['footer']['view']['ui_name'] = 'Presentations';
   $handler->display->display_options['footer']['view']['view_to_insert'] = 'presentations:presentations';
+  $handler->display->display_options['footer']['view']['inherit_arguments'] = TRUE;
   /* Footer: Events */
   $handler->display->display_options['footer']['view_1']['id'] = 'view_1';
   $handler->display->display_options['footer']['view_1']['table'] = 'views';

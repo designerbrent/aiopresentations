@@ -267,8 +267,25 @@ function aiopresentations_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
-      'display' => array(),
+      'form' => array(
+        'title' => array(
+          'weight' => '0',
+        ),
+        'path' => array(
+          'weight' => '11',
+        ),
+        'redirect' => array(
+          'weight' => '10',
+        ),
+      ),
+      'display' => array(
+        'by_this_author_entity_view_1' => array(
+          'default' => array(
+            'weight' => '4',
+            'visible' => TRUE,
+          ),
+        ),
+      ),
     ),
   );
   $export['field_bundle_settings_node__presentation_speaker'] = $strongarm;
@@ -320,7 +337,8 @@ function aiopresentations_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_presentation';
   $strongarm->value = array(
-    0 => 'status',
+    0 => 'moderation',
+    1 => 'revision',
   );
   $export['node_options_presentation'] = $strongarm;
 
@@ -329,7 +347,8 @@ function aiopresentations_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'node_options_presentation_event';
   $strongarm->value = array(
-    0 => 'status',
+    0 => 'moderation',
+    1 => 'revision',
   );
   $export['node_options_presentation_event'] = $strongarm;
 

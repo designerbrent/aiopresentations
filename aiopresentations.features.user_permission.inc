@@ -15,6 +15,7 @@ function aiopresentations_user_default_permissions() {
     'name' => 'add media from remote sources',
     'roles' => array(
       0 => 'administrator',
+      1 => 'staff',
     ),
     'module' => 'media_internet',
   );
@@ -31,84 +32,114 @@ function aiopresentations_user_default_permissions() {
   // Exported permission: create presentation content.
   $permissions['create presentation content'] = array(
     'name' => 'create presentation content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'staff',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: create presentation_event content.
   $permissions['create presentation_event content'] = array(
     'name' => 'create presentation_event content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'staff',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: create presentation_speaker content.
   $permissions['create presentation_speaker content'] = array(
     'name' => 'create presentation_speaker content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'staff',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete any presentation content.
   $permissions['delete any presentation content'] = array(
     'name' => 'delete any presentation content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete any presentation_event content.
   $permissions['delete any presentation_event content'] = array(
     'name' => 'delete any presentation_event content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete any presentation_speaker content.
   $permissions['delete any presentation_speaker content'] = array(
     'name' => 'delete any presentation_speaker content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete own presentation content.
   $permissions['delete own presentation content'] = array(
     'name' => 'delete own presentation content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete own presentation_event content.
   $permissions['delete own presentation_event content'] = array(
     'name' => 'delete own presentation_event content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: delete own presentation_speaker content.
   $permissions['delete own presentation_speaker content'] = array(
     'name' => 'delete own presentation_speaker content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: edit any presentation content.
   $permissions['edit any presentation content'] = array(
     'name' => 'edit any presentation content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'staff',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: edit any presentation_event content.
   $permissions['edit any presentation_event content'] = array(
     'name' => 'edit any presentation_event content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'staff',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: edit any presentation_speaker content.
   $permissions['edit any presentation_speaker content'] = array(
     'name' => 'edit any presentation_speaker content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'staff',
+    ),
     'module' => 'node',
   );
 
@@ -117,6 +148,7 @@ function aiopresentations_user_default_permissions() {
     'name' => 'edit media',
     'roles' => array(
       0 => 'administrator',
+      1 => 'staff',
     ),
     'module' => 'media',
   );
@@ -124,21 +156,30 @@ function aiopresentations_user_default_permissions() {
   // Exported permission: edit own presentation content.
   $permissions['edit own presentation content'] = array(
     'name' => 'edit own presentation content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'staff',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: edit own presentation_event content.
   $permissions['edit own presentation_event content'] = array(
     'name' => 'edit own presentation_event content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'staff',
+    ),
     'module' => 'node',
   );
 
   // Exported permission: edit own presentation_speaker content.
   $permissions['edit own presentation_speaker content'] = array(
     'name' => 'edit own presentation_speaker content',
-    'roles' => array(),
+    'roles' => array(
+      0 => 'administrator',
+      1 => 'staff',
+    ),
     'module' => 'node',
   );
 

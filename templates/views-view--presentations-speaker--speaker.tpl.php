@@ -77,8 +77,9 @@
   <?php if ($footer): ?>
     <div class="view-footer" id="view_footer_tabs">
       <ul>
-      	<li><a href="#aiopresentations_presentations-speaker_events">Events</a></li>
       	<li><a href="#aiopresentations_presentations_presentations">Presentations</a></li>
+      	<li><a href="#aiopresentations_presentations-speaker_events">Events</a></li>
+
       </ul>
       
       <?php print $footer; ?>

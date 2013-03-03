@@ -47,11 +47,11 @@ function aiopresentations_node_info() {
       'help' => '',
     ),
     'presentation_speaker' => array(
-      'name' => t('Speaker'),
+      'name' => t('Speaker/Author'),
       'base' => 'node_content',
       'description' => '',
       'has_title' => '1',
-      'title_label' => t('Title'),
+      'title_label' => t('Full Name'),
       'help' => '',
     ),
   );
